@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cover-letter-gen"
+version = "0.1.0"
+description = ""
+authors = ["dkr <deepukreddy123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+markitdown = "^0.0.1a3"
+openai = "^1.60.1"
+rich = "^13.9.4"
+python-dotenv = "^1.0.1"
+streamlit = "^1.41.1"
+pylatex = "^1.4.2"
+streamlit-pdf-viewer = "^0.0.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

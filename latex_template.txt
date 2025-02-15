@@ -1,0 +1,89 @@
+\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+
+\usepackage{settings}
+\ifxetexorluatex 
+  \usepackage{fontspec} 
+  \setmainfont{Times New Roman} 
+  \setsansfont{Arial}           
+  \setmonofont{Courier New}     
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{newtxtext}        
+  \usepackage{helvet}        
+  \usepackage{courier}          
+\fi
+
+\geometry{left=2.5cm,right=2cm,top=2cm,bottom=2.5cm}
+
+\newcommand{\addsign}[1]{
+\includegraphics[angle=0, origin=c, scale=0.35, trim={0.5cm 0.5cm -2cm 0cm}]{#1}}
+\usepackage[document]{ragged2e}
+
+
+
+\newcommand \salutation{}
+\newcommand \managername{}
+\newcommand \companyname{}
+\newcommand \street{}
+\newcommand \plz{}
+\newcommand \compcountry{}
+\newcommand \jobtitle{}
+
+
+
+
+\begin{document}
+
+\vspace{2pt}
+\begin{flushright}
+    \begin{tabular}{@{}r}
+    Deepu Krishnareddy \\
+    % Get the Street name and number from cv of the applicant \\
+    %Get City and Postzahl from cv of the applicant\\
+    Germany\\
+\end{tabular}
+\end{flushright}
+
+
+\begin{tabular}{@{} l}
+    \companyname \\
+    \managername \\
+    \street\\
+    \plz\\
+    \compcountry\\
+\end{tabular}
+
+\begin{flushright}
+ \begin{tabular}{@{}r}
+    Freiburg , \today\\
+\end{tabular}
+\end{flushright}
+
+\textbf{Application for \jobtitle}
+
+\bigskip
+\bigskip
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+Dear  \ifthenelse{\equal{\managername}{Hiring Manager}}{Hiring Manager}{\salutation \managername} ,\\
+\vspace{15pt}
+\justifying
+I am writing to express my enthusiastic interest in  \textbf{\jobtitle\hspace{1pt}} position at \companyname. % Continue writing here
+\\
+\vspace{8pt}
+%Second paragraph - Write about How I am a good fit. Map my skills , experiences and porjects for job roles
+\\
+ \vspace{8pt}
+%Third paragraph - Why I am motivated to join the company
+\\ 
+ \vspace{8pt}
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with \companyname's mission. Please feel free to contact me at your convenience. \\
+\vspace{24pt}
+Best Regards,\\
+%= \bigskip
+\addsign{sign.png}\\
+\vspace{0.5em}
+Deepu Krishnareddy \\
+\makefield{\faEnvelope[regular]}{\href{mailto:deepukreddy007@gmail.com}{\texttt{deepukreddy007@gmail.com}}}\\
+\end{document}

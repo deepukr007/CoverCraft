@@ -1,0 +1,8 @@
+template.txt
+.env
+cover_letters_latex/sign.png
+
+.vscode/
+__pycache__/
+
+cv

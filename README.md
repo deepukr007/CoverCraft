@@ -42,8 +42,7 @@ CoverCraft is an automated tool that generates personalized cover letters in LaT
 
 ## 🖊️ Customization
 
-- Modify `cover_letters_latex/latex_template.tex` to adjust the format and styling of your cover letter.
-- Update `config/settings.json` to change default preferences.
+- Modify `latex_template.txt` to adjust the format and styling of your cover letter.
 - Add your own signature image (`sign.png`) for a personalized touch.
 
 

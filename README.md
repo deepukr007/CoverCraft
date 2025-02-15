@@ -48,4 +48,4 @@ CoverCraft is an automated tool that generates personalized cover letters in LaT
 
 ## 📧 Contact
 
-For any queries, reach out to [deepukreddy007@example.com](mailto:deepukreddy007@gmail.com) or open an issue on GitHub.
+For any queries, reach out to [deepukreddy007@gmail.com](mailto:deepukreddy007@gmail.com) or open an issue on GitHub.

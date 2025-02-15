@@ -32,6 +32,9 @@ CoverCraft is an automated tool that generates personalized cover letters in LaT
 
 5. Customize the LaTeX template (`latex_template.tex`) to match your preferred cover letter style.
 
+7. Rename `.env_example` to `.env` and add your openai apikey
+
+
 6. Run the application
   ```sh
    streamlit run ui.py
